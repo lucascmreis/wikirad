@@ -1,0 +1,143 @@
+---
+title: Preventiva Diária - Semanal
+description: Atividades de Manutenção Preventiva diária do RSM970S e Semanal do RSM CIRIUS
+---
+
+Data: 11 Novembro 2020
+
+Versão: 1.0
+
+2S BET Reis 
+
+>Atividades de Manutenção Preventiva diária do RSM970S e Semanal do RSM CIRIUS
+
+---
+
+## Inspeção das Instalações
+
+1. Verificar condições de Temperatura  da KT-Radar
+2. Verificar condições de limpeza
+3. Verificar condições da infraestrutura 
+4. Verificar iluminação interna e externa ( luzes de balizamento, emergência, etc) do sítio
+
+
+  >A temperatura ideal é entre  18ºC e 20ºC
+
+
+
+## Inspeção Visual
+
+1. Verificar alarmes no Armário de Energia ( AE2000)
+
+2. Verificar alarmes no Armário de Antena ( AA2000)
+
+3. Medir a tensão de entrada do AE2000  
+
+    >Através do medidor de tensão do AE2000, espera-se uma tensão de entrada ~380V entre fases (L1, L2, L3) e  ~220V entre fases e neutro.
+
+4. Verificar alarmes nos módulos do  IRCB , de cada canal
+
+5. Verificar ruídos e o funcionamento das Gavetas de Ventilação Tx/Rx FAN e IRP FAN , de cada canal.
+
+6. Verificar o funcionamento das Switches de comunicação , na parte traseira de cada canal
+
+## Inspeção Mesa Técnica
+
+>As operações de inspeção ou intervenção por meio da mesa técnica, envolvem o uso concomitante ou não das ferramentas RCMS, CBP e IBIS ( ou IRIS). Depende da necessidade e complexidade de cada caso. 
+
+>Para operações simples, como comutação de canal, log de falhas , comutação de estado  operacional/manutenção e observar o tratamento de pistas, podem ser utilizados somente o **RCMS** e o **IBIS**. 
+
+### Operando pelo RCMS
+
+1. Avaliar os alarmes e falhas indicados no Log do RCMS
+
+2. Realizar Login na estação LTM
+
+3. Solicitar o controle da estação, na tela "Radar Station" → "Request Control". 
+
+4. Observar o correto funcionamento dos canais no RCMS.  Em caso de falhas identificar através da tela Failure do componente e anotar
+
+5. Observar o correto funcionamento operacional dos canais no IBIS.  Para o canal online identificar se há:
+    - Formação de pistas ( SSR e PSR+SSR)
+    - Presença de Plot,
+    - Vídeo Log Σ e Δ,
+    - Presença da Baliza ( SM - Código 3/A  = 7777)
+    - Presença do Teste interno TTG ( Código 3/A = 2222)
+    - Respostas nos modos 3/A e C ( totalizando entre 8 e 12 ),
+    - Condição da Curva OBA
+
+6. Em seguida, realizar a comutação de canal e repetir o passo anterior no IBIS, com o outro canal ONLINE.
+
+7. Verificar o funcionamento das PLines ( E4 e E8) e das vias de transmissão ( Modem, Switchs, etc)
+
+8. Confirmar o recebimento dos dados operacionais ( ASTERIX) com os centros de controle (ATCC). 
+
+9. Em caso de anomalias, anotar em relatório de manutenção e tomar uma das seguintes ações: 
+    - Solucionar o problema
+    - Programar uma manutenção corretiva, ou
+    - Solicitar apoio do Regional
+
+10. Libere o controle da estação ao finalizar,
+
+11. Realize o Logout;
+
+12. Limpe os alertas da tela "*Alarms*" antes de deixar a estação.
+
+### Operando pelo CBP
+
+>**Importante ! 
+Lembre-se sempre de Salvar um backup dos parâmetros do sítio , antes de modificar qualquer campo, mesmo que sejam para "testes rápidos".**
+
+>Em algumas verões do CBP, os principais comandos estão disponíveis através de um atalho, abaixo da barra de tarefas, além do menu tradicional Command → Command to Radar...
+
+1. Abrir uma instância do software CBP RSM CIRIUS  para cada canal, geralmente localizado na Área de trabalho ou no menu  Iniciar → Programas;
+2. No menu Command → Connect channel 1 (2) , realize a conexão com o canal a ser analisado;
+3. Observar o correto funcionamento dos canais no CBP. Em caso de falhas identificar através do menu  Display → Failure Codes e anotar
+4. Observar o correto funcionamento operacional dos canais no IBIS.  Para o canal online identificar se há:
+    - Formação de pistas ( SSR e PSR+SSR)
+    - Presença de Plot,
+    - Vídeo Log Σ e Δ,
+    - Presença da Baliza ( SMS - Código 3/A = 7777),
+    - Presença do Teste interno TTG ( Código 3/A = 2222)
+    - Respostas no modos 3/A e C ( totalizando entre 8 e 12 ),
+    - Condição da Curva OBA
+5. Em seguida, realizar a comutação de canal e repetir o passo anterior no IBIS, com o outro canal ONLINE.
+
+    O Comando de Switchover  deve ser executado a partir do canal em carga. 
+    1. Botão de atalho "Switchover" , ou
+    2. Command → Command to Radar → I/R To load / To antenna
+
+6. Verificar o funcionamento das PLines ( E4 e E8) e das vias de transmissão ( Modem, Switchs, etc)
+7. Confirmar o recebimento dos dados operacionais ( ASTERIX) com os centros de controle (ATCC). 
+8. Em caso de anomalias, anotar em relatório de manutenção e tomar uma das seguintes ações: 
+    - Solucionar o problema
+    - Programar uma manutenção corretiva, ou
+    - Solicitar apoio do Regional
+
+>**Ao finalizar as atividades com o CBP ( antes de sair da KT-RADAR ) , sempre desconecte o CBP. 
+Menu Command → Disconnect...**
+
+## Inspeção EA2000
+
+1. Verificar o funcionamento dos motores ( M1 e M2), observando a existência de possíveis : 
+    - Vazamentos de óleo
+    - Vibração ou ruído anormal
+2. Verificar a existência de possíveis vazamentos do pedestal
+3. Verificar o nível de óleo, através da espia. A marcação deve seguir a indicação mínima para o correto funcionamento;
+4. Verificar o funcionamento dos sensores de nível ( um em cada motorredutor e outro para o pedestal). O LED do sensor deve estar VERDE 
+5. Verificar se as conexões dos cabos de RF e de sinais estão isoladas e em boas condições.
+6. Verificar o funcionamento das Luzes e Sirene, do sistema de segurança da antena
+7. Verificar a inviolabilidade e condições das chaves de segurança
+
+## Referências
+
+1. **Apostilas do Curso RAD013S - 1/2020**
+2. **Boletim Técnico - RD 015 RSM CIRIUS R01 08/11/2017** 
+
+    [BT_RSMCIRIUS_R01.pdf](Preventiva%20Dia%CC%81ria%20-%20Semanal%20b6eb0f881b69489a85b760b444261aca/BT_RSMCIRIUS_R01.pdf)
+
+3. **Boletim Técnico - RD 005 RSM970S R04 08/11/2017**
+
+    [BT_RSM970S_R04.pdf](Preventiva%20Dia%CC%81ria%20-%20Semanal%20b6eb0f881b69489a85b760b444261aca/BT_RSM970S_R04.pdf)
+
+

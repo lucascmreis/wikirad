@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: `WikiRad`,
     siteTitleShort: `WikiRad`,
     siteDescription: `Repositório de conhecimento sobre Tecnologia Radar`,
-    siteUrl: `https://rocketdocs.netlify.com`,
+    siteUrl: `https://wikirad.vercel.app/`,
     siteAuthor: `@lucascmreis`,
     siteImage: `/banner.png`,
     siteLanguage: `pt`,

@@ -2,23 +2,27 @@
 
 - label: 'Introdução'
   link: '/'
-- label: 'Getting started'
+- label: 'Teste'
   link: '/getting-started'
-- label: Usage
+- label: Procedimentos & BT
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
-- label: More
+    - label: 'Preventiva Diária - Semanal'
+      link: '/procedures/rsm-cirius-ss'
+- label: Bizural
   items:
-    - label: FAQ
-      link: /faq
-    - label: Changelog
-      link: /changelog
-- label: Community
+    - label: 'CBP'
+      link: '/bizural/cbp'
+    - label: 'IBIS'
+      link: '/bizural/ibis'
+    - label: 'RCMS'
+      link: '/bizural/rcms'
+- label: Setup Instrumentação
+  items:
+    - label: FieldFox
+      link: /setup/field-fox
+    - label: Power Meter
+      link: /setup/power-meter
+- label: Teoria
   items:
     - label: 'Github'
       link: https://github.com/rocketseat/gatsby-themes
