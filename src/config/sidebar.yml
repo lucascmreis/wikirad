@@ -2,12 +2,10 @@
 
 - label: 'Introdução'
   link: '/'
-- label: 'Teste'
-  link: '/getting-started'
 - label: Procedimentos & BT
   items:
     - label: 'Preventiva Diária - Semanal'
-      link: '/procedures/rsm-cirius-ss'
+      link: '/procedimentos/rsm-ss'
 - label: Bizural
   items:
     - label: 'CBP'
@@ -24,5 +22,5 @@
       link: /setup/power-meter
 - label: Teoria
   items:
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: 'Radar Secundário'
+      link: '/teoria/radar-secundario'
